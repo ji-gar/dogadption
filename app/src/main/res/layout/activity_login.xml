@@ -88,6 +88,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/all_button"
+        android:id="@+id/btnLogin"
         android:text="Login"
         android:layout_marginTop="@dimen/_10ssp"
         android:layout_marginStart="16dp"
@@ -95,6 +96,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvForgot"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/tvRegitertext"
+        app:layout_constraintEnd_toStartOf="@id/tvRegister"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:text="Already Have Account ?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRegister"
+        android:layout_marginStart="@dimen/_8ssp"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:text="Register"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toEndOf="@id/tvRegitertext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"/>
+
 
 
 

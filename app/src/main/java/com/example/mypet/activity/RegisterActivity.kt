@@ -5,17 +5,18 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.mypet.R
 import com.example.mypet.databinding.ActivityLoginBinding
+import com.example.mypet.databinding.ActivityRegisterBinding
 
-class LoginActivity : AppCompatActivity() {
-    var binding:ActivityLoginBinding?=null
+class RegisterActivity : AppCompatActivity() {
+    //nanana
+    var binding: ActivityRegisterBinding?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= ActivityLoginBinding.inflate(layoutInflater)
+        binding= ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding?.root)
-        binding?.btnLogin?.setOnClickListener {
-            var intent= Intent(this,RegisterActivity::class.java)
+        binding?.tvRegister?.setOnClickListener {
+            var intent=Intent(this,LoginActivity::class.java)
             startActivity(intent)
-
         }
     }
 }
