@@ -8,7 +8,7 @@ import com.example.mypet.databinding.ActivityLoginBinding
 import com.example.mypet.databinding.ActivityRegisterBinding
 
 class RegisterActivity : AppCompatActivity() {
-    //nanana
+    //nananasss
     var binding: ActivityRegisterBinding?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
